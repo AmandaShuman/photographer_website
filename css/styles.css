@@ -1,20 +1,56 @@
+button {
+    background-color: #edcd2f;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+button:active {
+    background-color: tomato;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.navbar {
+    position: absolute;
+    z-index: 2;
+}
+
 .homepage-background {
-    width: 98.7vw;
-    height: 90vh;
+    width: 98vw;
+    height: 96vh;
     margin: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-top: 20px;
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-    -webkit-font-smoothing: antialiased; } /* makes the text more smooth */
+    background-position: relative;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+    -webkit-font-smoothing: antialiased; /* makes the text more smooth */
+}
+
+.top-right {
+    right: 5px;
+}
 
 /*for text on homepage*/
-
+.left-center {
+    position: absolute;
+    top: 30%;
+    left: 3%;
+    right: 70%;
+}
 
 /* fade in for homepage image fade in */
 @keyframes fadein {
