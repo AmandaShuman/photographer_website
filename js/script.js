@@ -18,17 +18,3 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 };
-
-// This is for the picture popups in the Photos page
-$(function () {
-    $("img").click(function () {
-        var $src = $(this).attr("src");
-        $(".show").fadeIn();
-        $(".img-show").attr("src", $src);
-    });
-
-    // click on the x to close out the picture 
-    $("span, .overlay").click(function () {
-        $(".show").fadeOut();
-    });
-});
