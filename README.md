@@ -25,3 +25,5 @@ Here I am showcasing on the Photos page:
 - making a navbar horizontal
 - working with z-index to put background in the background
 - playing with transitions
+- centering headers
+- working with ids along with classes

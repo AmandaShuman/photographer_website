@@ -43,6 +43,33 @@ p {
     -webkit-font-smoothing: antialiased; /* makes the text more smooth */
 }
 
+#gallery {
+    line-height: 0;
+    column-count: 2; /* splits into 2 columns */
+    column-gap: 5px; /* gives 5px gap between pics */
+    -webkit-column-count: 2;
+    -webkit-column-gap: 5px;
+    -moz-column-count: 2;
+    -moz-column-gap: 5px;
+    -ms-column-count: 2;
+    -ms-column-gap: 5px;
+    -o-column-count: 2;
+    -o-column-gap: 5px;
+}
+
+#gallery > img {
+    width: 95%;
+    height: auto;
+    margin: 2.5px 5px; /* matches #gallery column gap */
+    border-radius: 8px;
+    filter: grayscale(100%);
+    transition: filter 1s;
+}
+
+#gallery > img:hover {
+    filter: none;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -66,6 +93,9 @@ p {
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
 
@@ -169,6 +199,13 @@ ul.breadcrumb > li > a:hover {
 }
 
 @media (min-width: 600px) {
+    #gallery {
+        column-count: 3; /* splits into 3 columns */
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        -ms-column-count: 3;
+        -o-column-count: 3;
+    }
     .navbar {
         display: flex;
         justify-content: space-between;
