@@ -108,6 +108,12 @@ p {
     color: #d4b30a;
 }
 
+.header {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
 .homepage-background {
     width: 100%; /*can't figure out how to get the pic sized correctly w/o auto-sizing*/
     height: 1000px;
