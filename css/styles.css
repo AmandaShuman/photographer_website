@@ -111,6 +111,7 @@ p {
 .homepage-background {
     width: 100%; /*can't figure out how to get the pic sized correctly w/o auto-sizing*/
     height: 1000px;
+    z-index: -1;
     animation: fadein 4s;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s; /* Firefox < 16 */
