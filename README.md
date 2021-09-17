@@ -17,6 +17,7 @@ Here I am showcasing on the Photos page:
 ### HTML
 - working with self closing tags
 - naming classes for other users to understand the content
+- adding breadcrumbs to subpages
 
 ### CSS
 - media sizes
