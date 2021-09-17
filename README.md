@@ -11,6 +11,9 @@ This is an example page for a photographer's website to sell his services and sh
 - A functional navbar to links in the page
 
 Here I am showcasing on the Photos page:
+- A responsive view screen to include an extra column with larger viewports
+- Fade in of grayscale to all pictures
+- Pictures turn to color upon hovering on them
 
 
 ## Skills practiced
@@ -27,3 +30,6 @@ Here I am showcasing on the Photos page:
 - playing with transitions
 - centering headers
 - working with ids along with classes
+
+###JS
+- using event listeners to toggle the hamburger navigation
