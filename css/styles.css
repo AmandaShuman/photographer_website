@@ -136,9 +136,11 @@ p {
     }
     .nav-menu {
         display: flex;
+        position: absolute;
+        background: none;
         justify-content: space-between;
         align-items: center;
-        padding-left: 5rem;
+        padding-left: 50rem;
     }
     .nav-item {
         margin-left: 5rem;
