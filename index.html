@@ -10,24 +10,43 @@
 
   <body>
     <div>
-        <div class="navbar">
-            <a href="#"><img src="img/logo.jpg" alt="camera logo" height="40" /> LOGO</a>
-            <a href="photos.html">Photos</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="reviews.html">Reviews</a>
-            <a href="contact.html">Contact</a>
+      <nav class="navbar">
+        <a href="#" class="nav-logo"
+          ><img src="img/logo.jpg" alt="camera logo" height="40" /> LOGO</a
+        >
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="photos.html" class="nav-link">Photos</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <img class="homepage-background" src="img/camera-background.jpg" alt="camera background" />
-        <div class="left-center">
-            <h1>Heading</h1> 
-            <p>
-                Lorem ipsum dolor sit amet, 
-                consectetur adipiscing elit, sed 
-                do eiusmod tempor incididunt 
-                ut labore et dolore magna ali
-            </p>
-            <button>Learn More</button>
-        </div>
+      </nav>
+      <img
+        class="homepage-background"
+        src="img/camera-background.jpg"
+        alt="camera background"
+      />
+      <div class="left-center">
+        <h1 class="heading">Heading</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna ali
+        </p>
+        <button>Learn More</button>
+      </div>
     </div>
     <script src="js/script.js"></script>
   </body>

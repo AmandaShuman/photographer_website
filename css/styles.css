@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 button {
     background-color: #edcd2f;
     font-size: 20px;
@@ -20,36 +26,136 @@ button:active {
     transform: translateY(4px);
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased; /* makes the text more smooth */
+}
+
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
     position: absolute;
     z-index: 2;
 }
 
-.homepage-background {
-    width: 98vw;
-    height: 96vh;
-    margin: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: relative;
-    animation: fadein 4s;
-    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-         -o-animation: fadein 4s; /* Opera < 12.1 */
-    -webkit-font-smoothing: antialiased; /* makes the text more smooth */
+/* hamburger styling */
+.hamburger {
+    padding-left: 150px;
+    display: block;
+    cursor: pointer;
 }
 
-.top-right {
-    right: 5px;
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    background-color: #666;
+    box-shadow: 0 10px 27px rbga(0, 0, 0, 0.05);
+
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin-left: 2rem 0;
+}
+
+.nav-link {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0.5px 1px #666;
+}
+
+.nav-link:hover {
+    color: #edcd2f; 
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: #d4b30a;
+}
+
+.homepage-background {
+    width: 100%; /*can't figure out how to get the pic sized correctly w/o auto-sizing*/
+    height: 1000px;
+    animation: fadein 4s;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 4s; /* Firefox < 16 */
+    -ms-animation: fadein 4s; /* Internet Explorer */
+    -o-animation: fadein 4s; /* Opera < 12.1 */
+    
 }
 
 /*for text on homepage*/
 .left-center {
     position: absolute;
-    top: 30%;
-    left: 3%;
-    right: 70%;
+    top: 15%;
+    left: 5%;
+    right: 10%;
+}
+
+.heading {
+    font-size: 50px;
+    margin-bottom: 0%;
+    text-shadow: 1px 2px #666;
+    color: white;
+}
+
+@media (min-width: 600px) {
+    .hamburger {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 5rem;
+    }
+    .nav-item {
+        margin-left: 5rem;
+    }
+    .homepage-background {
+        width: 99vw;
+        height: 98vh;
+        margin: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: relative;
+    }
+    .left-center {
+        top: 20%;
+        left: 3%;
+        right: 60%;
+    }
 }
 
 /* fade in for homepage image fade in */
