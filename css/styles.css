@@ -26,6 +26,10 @@ button:active {
     transform: translateY(4px);
 }
 
+ul {
+    list-style: none;
+}
+
 li {
     list-style: none;
 }
@@ -99,7 +103,7 @@ p {
 }
 
 .nav-logo {
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: 600;
     color: #d4b30a;
 }
@@ -131,19 +135,30 @@ p {
 }
 
 @media (min-width: 600px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        min-height: 12vh;
+        min-width: 100%;
+    }
     .hamburger {
         display: none;
     }
     .nav-menu {
+        list-style: none;
         display: flex;
         position: absolute;
         background: none;
-        justify-content: space-between;
+        width: 40%;
         align-items: center;
-        padding-left: 50rem;
+        left: 50%;
+        top: 2rem;
+        flex-direction: row;
     }
     .nav-item {
-        margin-left: 5rem;
+        margin-left: 2rem;
     }
     .homepage-background {
         width: 99vw;
