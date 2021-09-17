@@ -1,11 +1,11 @@
 // This is for the picture popups in the Photos page - commonly called a lightbox
 
-//creates element of type div
+//creates element of type div - styled in CSS to be a grey box
 const lightbox = document.createElement('div')  
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 
-const images = document.querySelectorAll('img')
+const images = document.querySelectorAll('img') //selects all images with 'img' tags
 
 // pops up the box when a picture is clicked
 images.forEach(image => {

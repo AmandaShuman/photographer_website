@@ -33,3 +33,7 @@ Here I am showcasing on the Photos page:
 
 ###JS
 - using event listeners to toggle the hamburger navigation
+- creating new JS files for different pages
+- changing an item to being active or inactive
+- creating elements inside a div
+- using a while loop inside a JS file to remove old entries
