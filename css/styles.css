@@ -59,7 +59,7 @@ p {
 
 #gallery > img {
     width: 95%;
-    height: auto;
+    height: 20vh;
     margin: 2.5px 5px; /* matches #gallery column gap */
     border-radius: 8px;
     filter: grayscale(100%);
@@ -205,6 +205,9 @@ ul.breadcrumb > li > a:hover {
         -moz-column-count: 3;
         -ms-column-count: 3;
         -o-column-count: 3;
+    }
+    #gallery > img {
+        height: 33.3vh;
     }
     .navbar {
         display: flex;
