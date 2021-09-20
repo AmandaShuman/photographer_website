@@ -26,14 +26,6 @@ button:active {
     transform: translateY(4px);
 }
 
-ul {
-    list-style: none;
-}
-
-li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
 }
@@ -101,12 +93,13 @@ p {
     align-items: center;
     padding: 0.5rem 2rem;
     position: absolute;
+    width: 100%;
     z-index: 2;
 }
 
 /* hamburger styling */
 .hamburger {
-    padding-left: 150px;
+    /* padding-left: 150px; */
     display: block;
     cursor: pointer;
 }
@@ -116,11 +109,11 @@ p {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+    transition: all 2s ease-in-out;
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
     background-color: #101010;
 }
 
@@ -129,6 +122,7 @@ p {
     left: -100%;
     top: 5rem;
     flex-direction: column;
+    list-style: none;
     width: 100%;
     border-radius: 10px;
     text-align: center;
@@ -140,10 +134,6 @@ p {
 
 .nav-menu.active {
     left: 0;
-}
-
-.nav-item {
-    margin-left: 2rem 0;
 }
 
 .nav-link {
@@ -169,10 +159,22 @@ p {
     padding-bottom: 15px;
 }
 
-.homepage-background {
-    width: 100%; /*can't figure out how to get the pic sized correctly w/o auto-sizing*/
-    height: 1000px;
-    z-index: -1;
+.image-holder {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homepage-background {  
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-position: center;
+    /* margin-left: -300px; */
+    width: 100vw;
+    height: 100vh; 
+
+    z-index: -10;
     animation: fadein 4s;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 4s; /* Firefox < 16 */
@@ -236,33 +238,22 @@ ul.breadcrumb > li > a:hover {
         height: 33.3vh;
     }
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: fixed;
-        min-height: 12vh;
-        min-width: 100%;
+        display: inline;
     }
     .hamburger {
         display: none;
     }
     .nav-menu {
         list-style: none;
+        margin-top: -37px;
+        position: sticky;
         display: flex;
-        position: absolute;
+        justify-content: flex-end;
         background: none;
-        width: 40%;
-        align-items: center;
-        left: 50%;
-        top: 2rem;
         flex-direction: row;
-    }
-    .nav-item {
-        margin-left: 2rem;
+        gap: 1.5rem;
     }
     .homepage-background {
-        width: 99vw;
-        height: 98vh;
         margin: auto;
         background-size: cover;
         background-repeat: no-repeat;
