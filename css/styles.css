@@ -99,7 +99,6 @@ p {
 
 /* hamburger styling */
 .hamburger {
-    /* padding-left: 150px; */
     display: block;
     cursor: pointer;
 }
@@ -126,7 +125,6 @@ p {
     width: 100%;
     border-radius: 10px;
     text-align: center;
-    transition: 0.3s;
     background-color: #666;
     box-shadow: 0 10px 27px rbga(0, 0, 0, 0.05);
 
@@ -170,8 +168,7 @@ p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-position: center;
-    /* margin-left: -300px; */
-    width: 100vw;
+    margin-left: -280px;
     height: 100vh; 
 
     z-index: -10;
@@ -254,6 +251,7 @@ ul.breadcrumb > li > a:hover {
         gap: 1.5rem;
     }
     .homepage-background {
+        width: 100vw;
         margin: auto;
         background-size: cover;
         background-repeat: no-repeat;
