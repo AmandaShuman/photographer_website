@@ -30,6 +30,22 @@ p {
     font-size: 18px;
     -webkit-font-smoothing: antialiased; /* makes the text more smooth */
 }
+
+/*for text on homepage*/
+.left-center {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    right: 10%;
+}
+
+.heading {
+    font-size: 50px;
+    margin-bottom: 0%;
+    text-shadow: 1px 2px #666;
+    color: white;
+}
+
 .image-holder {
     width: 100vw;
     height: 100vh;
@@ -50,21 +66,6 @@ p {
     -ms-animation: fadein 4s; /* Internet Explorer */
     -o-animation: fadein 4s; /* Opera < 12.1 */
     
-}
-
-/*for text on homepage*/
-.left-center {
-    position: absolute;
-    top: 15%;
-    left: 5%;
-    right: 10%;
-}
-
-.heading {
-    font-size: 50px;
-    margin-bottom: 0%;
-    text-shadow: 1px 2px #666;
-    color: white;
 }
 
 /* This is for bigger screens */
