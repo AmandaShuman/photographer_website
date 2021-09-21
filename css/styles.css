@@ -117,7 +117,8 @@ p {
 }
 
 .nav-menu {
-    position: fixed;
+    display: none;
+    position: absolute;
     left: -100%;
     top: 5rem;
     flex-direction: column;
@@ -127,10 +128,15 @@ p {
     text-align: center;
     background-color: #666;
     box-shadow: 0 10px 27px rbga(0, 0, 0, 0.05);
-
+    transition: all 2s ease-in-out;  /* fix transition */
+    -webkit-transition: all 2s ease-in-out;
+    -moz-transition: all 2s ease-in-out;
+    -ms-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
 }
 
-.nav-menu.active {
+.hamburger:focus + ul {
+    display: block;
     left: 0;
 }
 
@@ -240,6 +246,7 @@ ul.breadcrumb > li > a:hover {
         display: none;
     }
     .nav-menu {
+        display: auto;
         list-style: none;
         margin-top: -37px;
         position: sticky;
