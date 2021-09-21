@@ -32,7 +32,6 @@ Here I am showcasing on the Photos page:
 - working with ids along with classes
 
 ###JS
-- using event listeners to toggle the hamburger navigation
 - creating new JS files for different pages
 - changing an item to being active or inactive
 - creating elements inside a div

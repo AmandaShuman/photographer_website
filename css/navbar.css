@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 a {
     text-decoration: none;
 }
@@ -23,7 +29,7 @@ a {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;  /* creates an expanding hamburger */
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
     -ms-transition: all 2s ease-in-out;
@@ -43,17 +49,20 @@ a {
     text-align: center;
     background-color: #666;
     box-shadow: 0 10px 27px rbga(0, 0, 0, 0.05);
-    transition: all 2s ease-in-out;  /* fix transition */
+    /* transition: all 2s ease-in-out; 
     -webkit-transition: all 2s ease-in-out;
     -moz-transition: all 2s ease-in-out;
     -ms-transition: all 2s ease-in-out;
-    -o-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out; */
 }
 
 .hamburger:focus + ul {
     display: block;
     left: 0;
+    user-select: all;
 }
+
+
 
 .nav-link {
     font-size: 1.6rem;
@@ -89,5 +98,6 @@ a {
         background: none;
         flex-direction: row;
         gap: 1.5rem;
+        transition: none;
     }
 }
