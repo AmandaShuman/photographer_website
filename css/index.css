@@ -23,6 +23,7 @@ button:active {
 p {
     font-size: 18px;
     -webkit-font-smoothing: antialiased; /* makes the text more smooth */
+    text-shadow: 0.5px 1px white;
 }
 
 /*for text on homepage*/
@@ -30,7 +31,7 @@ p {
     position: absolute;
     top: 15%;
     left: 5%;
-    right: 10%;
+    right: 15%;
 }
 
 .heading {
@@ -51,7 +52,7 @@ p {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-position: center;
-    margin-left: -280px;
+    margin-left: -180px;
     height: 100vh; 
     z-index: -10;
     animation: fadein 4s;
@@ -63,6 +64,18 @@ p {
 }
 
 /* This is for bigger screens */
+@media (min-width: 400px) {
+    .homepage-background {
+        margin-left: -100px;
+    }
+}
+
+@media (min-width: 445px) {
+    .left-center {
+        right: 50%;
+    }
+}
+
 @media (min-width: 600px) {
     .homepage-background {
         width: 100vw;
