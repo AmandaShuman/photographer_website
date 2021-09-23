@@ -1,0 +1,48 @@
+p {
+    text-align: right;
+    padding-right: 15%;
+    padding-bottom: 14px;
+}
+
+button {
+    display: none;
+    background-color: rgb(247, 197, 106);
+    border-radius: 8px;
+    padding: 3px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.price {
+    font-size: 50px;
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+    margin-bottom: 10px;
+    width: 70%;
+    padding: 15% 10%;
+    text-align: center;
+    background-image: linear-gradient(rgb(158, 158, 158),white);
+    border-radius: 12px;
+}
+
+.pricing-card:hover {
+    border: 5px solid orange;
+    transform: scale(1.2);
+}
+
+.pricing-card:hover button {
+    display: inline-block;
+}
+
+.pricing-card:hover .dollar {
+    color:rgb(243, 173, 43)
+}
+
+@media (min-width: 500px) {
+    .pricing-card {
+    }
+}
