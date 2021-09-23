@@ -1,4 +1,51 @@
-.starReviews{
-    color: #f9d71c;
+.review-card {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 25px;
+    margin-left: 8%;
+    margin-right: 8%;
+    background-color: rgb(247, 197, 106);
+    border-radius: 10px;
 }
 
+.avatar {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.starReviews{
+    margin-top: 5px;
+    color: white;
+}
+
+.review-info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-stars {
+    padding-left: 20px;
+}
+
+.client-comment {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.extra-text {
+    display: none;
+}
+
+.review-card:hover {
+    transform: scale(1.2);
+}
+.review-card:hover .etc {
+    display: none;
+}
+.review-card:hover .extra-text {
+    display: inline;
+}
