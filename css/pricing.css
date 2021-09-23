@@ -43,6 +43,21 @@ button {
 }
 
 @media (min-width: 500px) {
+    p {
+        padding-right: 0;
+    }
+    button {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .prices {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
     .pricing-card {
+        width: 33vh;
+        margin: 20px;
+        padding: 40px;
     }
 }
