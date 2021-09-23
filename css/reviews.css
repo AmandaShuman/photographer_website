@@ -42,10 +42,31 @@
 
 .review-card:hover {
     transform: scale(1.2);
+    border: 4px solid white;
 }
 .review-card:hover .etc {
     display: none;
 }
 .review-card:hover .extra-text {
     display: inline;
+}
+
+@media (min-width: 600px) {
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15%;
+    }
+    .review-card {
+        margin-left: 3%;
+        margin-right: 2%;
+        width: 45%;
+    }
+}
+
+@media (min-width: 900px) {
+    .reviews {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
