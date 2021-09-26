@@ -7,56 +7,104 @@
 
     <!-- Primary Meta Tags -->
     <title>Photos4U-Gallery</title>
-    <meta name="title" content="Photos4U-Gallery">
-    <meta name="description" content="Hover over an image to see it in color. Click an image to see it maximized. ">
-    <meta name="author" content="Amanda Shuman">
+    <meta name="title" content="Photos4U-Gallery" />
+    <meta
+      name="description"
+      content="Hover over an image to see it in color. Click an image to see it maximized. "
+    />
+    <meta name="author" content="Amanda Shuman" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://photos4u.netlify.app/photos.html">
-    <meta property="og:title" content="Photos4U-Gallery">
-    <meta property="og:description" content="Hover over an image to see it in color. Click an image to see it maximized. ">
-    <meta property="og:image" content="screenshots/photosPage.png">
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://photos4u.netlify.app/photos.html"
+    />
+    <meta property="og:title" content="Photos4U-Gallery" />
+    <meta
+      property="og:description"
+      content="Hover over an image to see it in color. Click an image to see it maximized. "
+    />
+    <meta property="og:image" content="screenshots/photosPage.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://photos4u.netlify.app/photos.html">
-    <meta property="twitter:title" content="Photos4U-Gallery">
-    <meta property="twitter:description" content="Hover over an image to see it in color. Click an image to see it maximized. ">
-    <meta property="twitter:image" content="screenshots/photosPage.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://photos4u.netlify.app/photos.html"
+    />
+    <meta property="twitter:title" content="Photos4U-Gallery" />
+    <meta
+      property="twitter:description"
+      content="Hover over an image to see it in color. Click an image to see it maximized. "
+    />
+    <meta property="twitter:image" content="screenshots/photosPage.png" />
 
     <script defer src="js/photo-script.js"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/photos.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/breadcrumbs.css" />
   </head>
 
-  <body>
-    <ul class="breadcrumb">
-      <li><a href="index.html">Home</a></li>
-      <li>Photos</li>
-    </ul>
+  <body class="photo-body">
+    <div>
+      <nav class="navbar">
+        <a href="#" class="nav-logo"
+          ><img src="img/logo.jpg" alt="camera logo" height="30" /> LOGO</a
+        >
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+          <ul class="nav-menu">
+            <li>
+              <a href="photos.html" class="nav-link">Photos</a>
+            </li>
+            <li>
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="reviews.html" class="nav-link">Reviews</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="middle">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Photos</li>
+      </ul>
+    </div>
+
     <div class="header">
       <h1>Photos</h1>
       <h5>Click on a photo to see it in color</h5>
     </div>
+
     <!-- Photo Grid -->
     <div id="gallery">
-        <img src="img/bridal-first-dance.jpg" alt="bridal first dance" />
-        <img src="img/sunflower.jpg" alt="sunflower" />
-        <img src="img/butterfly.jpg" alt="butterfly" />
-        
-        <img src="img/apples.jpg" alt="apples" />
-        <img src="img/child-running.jpg" alt="child running" />
-        <img src="img/chipmonk.jpg" alt="chipmonk" />
+      <img src="img/bridal-first-dance.jpg" alt="bridal first dance" />
+      <img src="img/sunflower.jpg" alt="sunflower" />
+      <img src="img/butterfly.jpg" alt="butterfly" />
 
-        <img src="img/hummingbird.jpg" alt="hummingbird" />
-        <img src="img/married-couple.jpg" alt="married couple" />
-        <img src="img/spiderWeb.jpg" alt="spider web" />
+      <img src="img/child-running.jpg" alt="child running" />
+      <img src="img/mushrooms.jpg" alt="mushrooms" />
+      <img src="img/hummingbird.jpg" alt="hummingbird" />
 
-        <img src="img/mushrooms.jpg" alt="mushrooms" />
-        <img src="img/rain-on-window.jpg" alt="rain on window" />
+      <img src="img/chipmonk.jpg" alt="chipmonk" />
+      <img src="img/married-couple.jpg" alt="married couple" />
+      <img src="img/spiderWeb.jpg" alt="spider web" />
+
+      <img src="img/apples.jpg" alt="apples" />
+      <img src="img/rain-on-window.jpg" alt="rain on window" />
     </div>
   </body>
 </html>

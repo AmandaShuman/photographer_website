@@ -88,9 +88,16 @@ input:checked ~ ul {
 }
 
 .nav-logo {
+  margin-left: -8%;
   font-size: 2rem;
   font-weight: 600;
   color: #d4b30a;
+}
+
+@media (min-width: 500px) {
+  .nav-logo {
+    margin-left: -5%;
+  }
 }
 
 @media (min-width: 600px) {
@@ -100,6 +107,9 @@ input:checked ~ ul {
   span,
   input {
     display: none;
+  }
+  .nav-logo {
+    margin-left: -2%;
   }
   .nav-menu {
     display: auto;
