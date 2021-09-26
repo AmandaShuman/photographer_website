@@ -5,7 +5,7 @@ const lightbox = document.createElement('div')
 lightbox.id = 'lightbox'
 document.body.appendChild(lightbox)
 
-const images = document.querySelectorAll('img') //selects all images with 'img' tags
+const images = document.querySelectorAll('.photo') //selects all images with 'photo' tags
 
 // pops up the box when a picture is clicked
 images.forEach(image => {
