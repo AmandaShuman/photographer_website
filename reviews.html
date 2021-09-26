@@ -26,15 +26,47 @@
     <meta property="twitter:image" content="screenshots/reviewsPage.png">
 
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/breadcrumbs.css" />
     <link rel="stylesheet" href="css/reviews.css" />
   </head>
 
-  <body>
+  <body class="reviews-body">
+    <div>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="img/logo.jpg" alt="camera logo" height="30" /> 
+          LOGO
+        </a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <ul class="nav-menu">
+            <li>
+              <a href="photos.html" class="nav-link">Photos</a>
+            </li>
+            <li>
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="reviews.html" class="nav-link">Reviews</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="middle">
     <ul class="breadcrumb">
       <li><a href="index.html">Home</a></li>
       <li>Reviews</li>
     </ul>
+    </div>
 
     <h1 class="header">Reviews</h1>
 
@@ -91,12 +123,11 @@
         </div>
         <div class="client-comment">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem, quaerat quis? Provident temporibus
+            Here is my stupendous review and all it entails except
             <span class="etc">...</span>
             <span class="extra-text">
-              architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
-              aliquam tenetur voluptates incidunt blanditiis sed atque cumque.
+              that I'm not worried about this review, so I'm writing whatever
+              comes to mind.
             </span>
           </p>
         </div>
@@ -125,11 +156,12 @@
         </div>
         <div class="client-comment">
           <p>
-            Here is my stupendous review and all it entails except
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem, quaerat quis? Provident temporibus
             <span class="etc">...</span>
             <span class="extra-text">
-              that I'm not worried about this review, so I'm writing whatever
-              comes to mind.
+              architecto asperiores nobis maiores nisi a. Quae doloribus ipsum
+              aliquam tenetur voluptates incidunt blanditiis sed atque cumque.
             </span>
           </p>
         </div>

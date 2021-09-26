@@ -1,72 +1,81 @@
+.reviews-body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    80deg,
+    rgba(86, 70, 97, 0.45) 0%,
+    rgba(89, 104, 84, 0.68) 100%
+  );
+}
+
 .review-card {
-    display: flex;
-    flex-direction: column;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-bottom: 25px;
-    margin-left: 8%;
-    margin-right: 8%;
-    background-color: rgb(247, 197, 106);
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 25px;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: rgb(247, 197, 106);
+  border-radius: 10px;
 }
 
 .avatar {
-    width: 50px;
-    height: 40px;
-    border-radius: 50%;
+  width: 50px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.starReviews{
-    margin-top: 5px;
-    color: white;
+.starReviews {
+  margin-top: 5px;
+  color: white;
 }
 
 .review-info {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
 }
 
 .name-stars {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .client-comment {
-    padding-top: 10px;
-    padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .extra-text {
-    display: none;
+  display: none;
 }
 
 .review-card:hover {
-    transform: scale(1.2);
-    border: 4px solid white;
+  transform: scale(1.1);
+  border: 4px solid white;
 }
 .review-card:hover .etc {
-    display: none;
+  display: none;
 }
 .review-card:hover .extra-text {
-    display: inline;
+  display: inline;
 }
 
 @media (min-width: 600px) {
-    .reviews {
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 15%;
-    }
-    .review-card {
-        margin-left: 3%;
-        margin-right: 2%;
-        width: 45%;
-    }
+  .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+  }
+  .review-card {
+    margin-left: 3%;
+    margin-right: 2%;
+    width: 45%;
+  }
 }
 
 @media (min-width: 900px) {
-    .reviews {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
+  .reviews {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
