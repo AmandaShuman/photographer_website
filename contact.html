@@ -4,16 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/breadcrumbs.css" />
     <title>Photos4U-Contact</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/breadcrumbs.css" />
+    <link rel="stylesheet" href="css/contact.css" />
   </head>
 
-  <body>
-    <ul class="breadcrumb">
-      <li><a href="index.html">Home</a></li>
-      <li>Contact</li>
-    </ul>
+  <body class="contact-body">
+    <div>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <img src="img/logo.jpg" alt="camera logo" height="30" />
+          LOGO
+        </a>
+        <div id="menuToggle">
+          <input type="checkbox" />
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <ul class="nav-menu">
+            <li>
+              <a href="photos.html" class="nav-link">Photos</a>
+            </li>
+            <li>
+              <a href="pricing.html" class="nav-link">Pricing</a>
+            </li>
+            <li>
+              <a href="reviews.html" class="nav-link">Reviews</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-    <h1>Contact Us</h1>
+    <div class="middle">
+      <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <h1 class="header">Contact Us</h1>
   </body>
 </html>
