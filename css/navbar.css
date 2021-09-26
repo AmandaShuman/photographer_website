@@ -125,6 +125,11 @@ input:checked ~ ul {
   }
 }
 
+@media (min-width: 1000px) {
+  .nav-logo {
+    margin-left: 0;
+  }
+}
 /* slidein animation from left to right */
 @keyframes slidein {
     from { left: -100%; }
