@@ -29,6 +29,8 @@ button {
 .pricing-card {
   display: flex;
   flex-direction: column;
+  margin: auto;
+  margin-top: 10px;
   margin-bottom: 50px;
   width: 70%;
   padding: 25px 10px;
@@ -67,7 +69,7 @@ button {
     width: 33vh;
     margin: 20px;
     padding: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
