@@ -84,14 +84,14 @@ input:checked ~ ul {
 }
 
 .nav-link:hover {
-  color: #edcd2f;
+  color: #4fed2f;
 }
 
 .nav-logo {
   margin-left: -8%;
   font-size: 2rem;
   font-weight: 600;
-  color: #d4b30a;
+  color: #4fed2f;
 }
 
 @media (min-width: 500px) {
