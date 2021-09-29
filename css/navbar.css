@@ -22,11 +22,11 @@ a {
   background-color: #101010;
 }
 
-input {
+input.invisible-checkbox {
   width: 26px;
   height: 34px;
   position: absolute;
-  opacity: 0; /* makes checkbox invisible */
+  opacity: 0; /* makes checkbox invisible but clickable */
   z-index: 10; /* puts checkbox on top of hamburger */
   cursor: pointer;
 }
