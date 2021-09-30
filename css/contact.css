@@ -21,3 +21,11 @@
   margin: auto;
   width: 33%;
 }
+
+.feedback-text {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 12%;
+  text-align: center;
+  width: 80%;
+}
