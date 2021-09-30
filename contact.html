@@ -49,26 +49,34 @@
       </ul>
     </div>
 
-    <h1 class="header">Contact Me</h1>
     <img
+      class="self-portrait"
       src="img/photographer.jpg"
       alt="photographer self portrait"
-      width="350px"
     />
     <div>
       <h1 class="header">Jane Awesome</h1>
-
-      <p>
-        ipsum dolor sit amet consectetur adipiscing elit ut aliquam purus sit
-        amet luctus venenatis lectus magna fringilla urna porttitor rhoncus
-        dolor
-      </p>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/shumaama/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/amanda-shuman/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/AmandaShuman" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <p>Did you enjoy this website? If so, feel free to reach out!</p>
       <form>
-        <input 
-          type="text" 
-          name="form-name" 
-          placeholder="John Smith" 
-          required 
+        <input
+          type="text"
+          name="form-name"
+          placeholder="John Smith"
+          required
         /><br />
         <input
           type="text"
@@ -76,12 +84,21 @@
           placeholder="john.smith@gmail.com"
           required
         /><br />
-        <textarea
-          name="form-message"
-          placeholder="Tell me more..."
-        ></textarea>
+        <label for="detail-choices">Reason for reaching out</label><br />
+        <select id="detail-choices" name="choices">
+          <option value="choose">Choose one</option>
+          <option value="feedback">Give Feedback</option>
+          <option value="job">To hire</option>
+          <option value="other">other</option>
+        </select><br />
+        <textarea name="form-message" placeholder="Tell me more..."></textarea
+        ><br />
         <input type="submit" />
       </form>
     </div>
   </body>
+  <script
+    src="https://kit.fontawesome.com/cd79c73229.js"
+    crossorigin="anonymous"
+  ></script>
 </html>
