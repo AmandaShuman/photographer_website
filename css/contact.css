@@ -15,3 +15,9 @@
   max-width: 90%;
   max-height: 30vh;
 }
+
+.social-icons {
+  font-size: 30px;
+  margin: auto;
+  width: 33%;
+}
