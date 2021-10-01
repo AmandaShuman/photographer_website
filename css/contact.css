@@ -89,3 +89,62 @@ input[type=submit] {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+@media (min-width: 700px) {
+  .contact-stuff {
+    display: flex;
+  }
+  /* making the photo like a snapshot */
+  
+  .img-background {
+    margin-left: 10%;
+    height: 50vh;
+    padding: 30px 15px;
+    background: white;
+    border: 2px solid black;
+    z-index: 10;
+  }
+  .self-portrait {
+    max-height: 40vh;
+    display: block;    
+  }
+  /* formatting name & text box */
+  .header-name {
+    margin-top: 30px;
+    margin-left: -8%;
+    max-width: 300px;
+  }
+  .social-box {
+    display: block;
+    max-width: 650px;
+    margin-left: -2%;
+    padding-right: 5%;
+  }
+  /* .social-icons {
+    font-size: 40px;
+  } */
+  .feedback-text {
+    max-width: 500px;
+    width: 90%;
+    margin-left: 5%;
+  }
+  /* adjusting the form for big screen */
+  input[type=text] {
+    margin-left: 2%;
+    margin-top: 10px;
+    width: 98%;
+  }
+  .reaching-out {
+    margin-top: 10px;
+    margin-left: -300px;
+  }
+  select, textarea, input[type=submit] {
+    margin-left: -300px;
+    width: 800px;
+  }
+  input[type=submit] {
+    margin-top: -5px;
+    border-radius: 5px;
+    border: none;
+  }
+}

@@ -48,61 +48,77 @@
       </ul>
     </div>
 
-    <img
-      class="self-portrait"
-      src="img/photographer.jpg"
-      alt="photographer self portrait"
-    />
-    <h1 class="header-name">Jane Awesome</h1>
-    <div class="social-box">
-      <div class="social-icons">
-        <a href="https://www.instagram.com/shumaama/" target="_blank">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="https://www.facebook.com/" target="_blank">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/amanda-shuman/" target="_blank">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/AmandaShuman" target="_blank">
-          <i class="fab fa-github"></i>
-        </a>
+    <div class="contact-stuff">
+      <div class="img-background">
+        <img
+          class="self-portrait"
+          src="img/photographer.jpg"
+          alt="photographer self portrait"
+        />
       </div>
-      <p class="feedback-text">
-        Did you enjoy this website? Did you notice something that isn't quite
-        right and want to tell me? Or maybe you liked my work so much, you might
-        be interested in hiring me? If so, feel free to reach out!
-      </p>
+      <div class="contact-stuff-child2">
+        <h1 class="header-name">Jane Awesome</h1>
+        <div class="social-box">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/shumaama/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/amanda-shuman/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/AmandaShuman" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <p class="feedback-text">
+            Did you enjoy this website or notice something that isn't
+            quite right and want to tell me? Or maybe you liked my work so much,
+            you might be interested in hiring me? If so, feel free to reach out!
+          </p>
+        </div>
+        <form>
+          <input
+            type="text"
+            name="form-name"
+            placeholder="John Smith"
+            required
+          /><br />
+          <input
+            type="text"
+            name="form-email"
+            placeholder="john.smith@gmail.com"
+            required
+          /><br />
+          <label class="reaching-out" for="detail-choices"
+            >Reason for reaching out:</label
+          ><br />
+          <select id="detail-choices" name="choices">
+            <option value="choose">Choose one</option>
+            <option value="feedback">Give Feedback</option>
+            <option value="job">To hire</option>
+            <option value="other">other</option></select
+          ><br />
+          <textarea
+            rows="5"
+            name="form-message"
+            placeholder="Tell me more..."
+          ></textarea
+          ><br />
+          <input type="submit" />
+        </form>
+      </div>
     </div>
-    <form>
-      <input
-        type="text"
-        name="form-name"
-        placeholder="John Smith"
-        required
-      /><br />
-      <input
-        type="text"
-        name="form-email"
-        placeholder="john.smith@gmail.com"
-        required
-      /><br />
-      <label class="reaching-out" for="detail-choices">Reason for reaching out:</label><br />
-      <select id="detail-choices" name="choices">
-        <option value="choose">Choose one</option>
-        <option value="feedback">Give Feedback</option>
-        <option value="job">To hire</option>
-        <option value="other">other</option></select
-      ><br />
-      <textarea rows="5" name="form-message" placeholder="Tell me more..."></textarea
-      ><br />
-      <input type="submit" />
-    </form>
 
     <div class="footer">
       <p>Copyright @ 2021 All Rights Reserved</p>
     </div>
+
   </body>
   <script
     src="https://kit.fontawesome.com/cd79c73229.js"
