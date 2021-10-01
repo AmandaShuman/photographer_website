@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photos4U-Contact</title>
 
-    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/breadcrumbs.css" />
     <link rel="stylesheet" href="css/contact.css" />
@@ -54,8 +53,8 @@
       src="img/photographer.jpg"
       alt="photographer self portrait"
     />
-    <div>
-      <h1 class="header">Jane Awesome</h1>
+    <h1 class="header-name">Jane Awesome</h1>
+    <div class="social-box">
       <div class="social-icons">
         <a href="https://www.instagram.com/shumaama/" target="_blank">
           <i class="fab fa-instagram"></i>
@@ -70,31 +69,39 @@
           <i class="fab fa-github"></i>
         </a>
       </div>
-      <p class="feedback-text">Did you enjoy this website? Did you notice something that isn't quite right and want to tell me? Or maybe you liked my work so much, you might be interested in hiring me? If so, feel free to reach out!</p>
-      <form>
-        <input
-          type="text"
-          name="form-name"
-          placeholder="John Smith"
-          required
-        /><br />
-        <input
-          type="text"
-          name="form-email"
-          placeholder="john.smith@gmail.com"
-          required
-        /><br />
-        <label for="detail-choices">Reason for reaching out</label><br />
-        <select id="detail-choices" name="choices">
-          <option value="choose">Choose one</option>
-          <option value="feedback">Give Feedback</option>
-          <option value="job">To hire</option>
-          <option value="other">other</option>
-        </select><br />
-        <textarea name="form-message" placeholder="Tell me more..."></textarea
-        ><br />
-        <input type="submit" />
-      </form>
+      <p class="feedback-text">
+        Did you enjoy this website? Did you notice something that isn't quite
+        right and want to tell me? Or maybe you liked my work so much, you might
+        be interested in hiring me? If so, feel free to reach out!
+      </p>
+    </div>
+    <form>
+      <input
+        type="text"
+        name="form-name"
+        placeholder="John Smith"
+        required
+      /><br />
+      <input
+        type="text"
+        name="form-email"
+        placeholder="john.smith@gmail.com"
+        required
+      /><br />
+      <label class="reaching-out" for="detail-choices">Reason for reaching out:</label><br />
+      <select id="detail-choices" name="choices">
+        <option value="choose">Choose one</option>
+        <option value="feedback">Give Feedback</option>
+        <option value="job">To hire</option>
+        <option value="other">other</option></select
+      ><br />
+      <textarea rows="5" name="form-message" placeholder="Tell me more..."></textarea
+      ><br />
+      <input type="submit" />
+    </form>
+
+    <div class="footer">
+      <p>Copyright @ 2021 All Rights Reserved</p>
     </div>
   </body>
   <script
